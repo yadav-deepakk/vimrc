@@ -1,3 +1,4 @@
-## Packages being used by the vim
-- Related to ui
-    - onedark
+## Packages
+- lightline
+- fzf 
+- fzf.vim

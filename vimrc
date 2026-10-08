@@ -1,2 +1,6 @@
-source ~/.vim/options.vim
-source ~/.vim/keymaps.vim
+" vim configs
+source ~/.config/vim//configs.vim
+
+" external plugins
+source ~/.config/vim//plugins.vim
+
