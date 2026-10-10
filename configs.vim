@@ -23,15 +23,9 @@ set termguicolors
 syntax enable
 filetype plugin indent on
 set completeopt=menu,menuone,noselect
-set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:+
 
 set background=dark
 colorscheme retrobox
-
-" Transparent Terminal
-highlight Normal guibg=NONE ctermbg=NONE
-highlight NormalNC guibg=NONE ctermbg=NONE
-highlight NonText guibg=NONE ctermbg=NONE
 
 " Transparent Vim terminal
 highlight Normal guibg=NONE ctermbg=NONE
@@ -40,8 +34,6 @@ highlight NonText guibg=NONE ctermbg=NONE
 highlight SignColumn guibg=NONE ctermbg=NONE
 highlight LineNr guibg=NONE ctermbg=NONE
 highlight CursorLineNr guibg=NONE ctermbg=NONE
-
-" Terminal-specific background
 highlight Terminal guibg=NONE ctermbg=NONE
 
 let g:netrw_winsize = 24
