@@ -1,6 +1,3 @@
-" vim configs
-source ~/.config/vim//configs.vim
-
-" external plugins
-source ~/.config/vim//plugins.vim
+source ~/.config/vim/configs.vim
+source ~/.config/vim/plugins.vim
 

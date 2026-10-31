@@ -1,4 +1,4 @@
-" options
+"options
 set number
 set relativenumber
 set cursorline
@@ -13,6 +13,7 @@ set autoindent
 set smartindent
 
 set ignorecase
+set incsearch
 set smartcase
 set hlsearch
 
@@ -36,7 +37,7 @@ highlight LineNr guibg=NONE ctermbg=NONE
 highlight CursorLineNr guibg=NONE ctermbg=NONE
 highlight Terminal guibg=NONE ctermbg=NONE
 
-let g:netrw_winsize = 24
+let g:netrw_winsize = 25
 let g:netrw_liststyle= 3
 
 " keymaps
@@ -45,20 +46,28 @@ let mapleader = " "
 nnoremap <leader>e <cmd>Lex<cr>
 nnoremap <leader>w <cmd>update<cr>
 nnoremap <leader>q <cmd>quit<cr>
-nnoremap <esc><esc> <cmd>nohlsearch<cr>
-nnoremap ]b <cmd>bnext<cr>
-nnoremap [b <cmd>bprev<cr>
 nnoremap <leader>ba <cmd>tab ba<cr>
+nnoremap <leader>m <cmd>make<cr>
 nnoremap <leader>tt <cmd>botright terminal<cr>
 nnoremap <leader>T <cmd>tabnew<cr><cmd>terminal ++curwin<cr>
 nnoremap <leader>L <cmd>tabnew<cr><cmd>terminal ++curwin lazygit<cr>
+
+nnoremap ]b <cmd>bnext<cr>
+nnoremap [b <cmd>bprev<cr>
+
+nnoremap <esc><esc> <cmd>nohlsearch<cr>
+tnoremap <esc><esc> <c-\><c-n>
 
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
+nnoremap <c-d> <c-d>zz
+nnoremap <c-u> <c-u>zz
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
-tnoremap <esc><esc> <c-\><c-n>
 
