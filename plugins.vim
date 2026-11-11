@@ -10,6 +10,6 @@ nnoremap <leader>fg :Rg
 nnoremap <leader>fb <cmd>Buffers<cr>
 
 " settings for vimwiki
-let g:vimwiki_path = '~/.notes/vimwiki/'
-let g:vimwiki_syntax = 'markdown'
-let g:vimwiki_ext = 'md'
+let g:vimwiki_list = [{'path': '~/.vimwiki/notes', 'syntax': 'markdown', 'ext': 'md'}, 
+            \ {'path': '~/.vimwiki/projects', 'syntax': 'markdown', 'ext': 'md'}]
+
