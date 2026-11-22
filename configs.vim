@@ -17,6 +17,7 @@ set ignorecase
 set incsearch
 set smartcase
 set hlsearch
+set shortmess-=S
 
 set updatetime=250
 set timeoutlen=450
@@ -55,6 +56,7 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap { {zz
 nnoremap } }zz
+nnoremap G Gzz
 
 nnoremap ]b <cmd>bnext<cr>
 nnoremap [b <cmd>bprev<cr>
